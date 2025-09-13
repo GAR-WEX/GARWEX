@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>متجر بسيط - Spaceremit</title>
+
+<!-- 🔹 تحقق ملكية Spaceremit -->
+<meta name="spaceremit-verification" content="2TPQ91PI9FJUSSA22RTJCXJDQOVBJ75I0F048NRRML8738ZQ3D">
+
 <style>
 body {font-family: Arial, sans-serif; background:#f7f7f7; margin:0; padding:0; text-align:center;}
 header {background:#2d6cdf; color:#fff; padding:20px;}
@@ -21,95 +25,7 @@ footer {background:#2d6cdf; color:#fff; padding:10px; margin-top:40px;}
   <h1>💻 متجر تجريبي - ماوس & كيبورد</h1>
 </header>
 
-<section class="products">
-
-  <div class="product">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Computer_mouse.jpg" alt="ماوس">
-    <h2>ماوس سلكي</h2>
-    <p>سعر: 10 USD</p>
-    <form id="spaceremit-form-mouse" style="width:100%;padding:10px;" method="POST">
-      <input type="hidden" name="amount" value="10">
-      <input type="hidden" name="currency" value="USD">
-      <input type="hidden" name="fullname" value="Client Test">
-      <input type="hidden" name="email" value="mouhammedtahaaouari1@gmail.com">
-      <input type="hidden" name="phone" value="+123456789">
-      <input type="hidden" name="notes" value="شراء ماوس">
-
-      <div class="sp-one-type-select">
-        <input type="radio" name="sp-pay-type-radio" value="local-methods-pay" id="mouse_local" checked>
-        <label for="mouse_local"><div>Local payment methods</div></label>
-        <div id="spaceremit-local-methods-pay"></div>
-      </div>
-
-      <div class="sp-one-type-select">
-        <input type="radio" name="sp-pay-type-radio" value="card-pay" id="mouse_card">
-        <label for="mouse_card"><div>Card payment</div></label>
-        <div id="spaceremit-card-pay"></div>
-      </div>
-
-      <button type="submit">ادفع الآن</button>
-    </form>
-  </div>
-
-  <div class="product">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Keyboard.jpg" alt="كيبورد">
-    <h2>كيبورد ميكانيكي</h2>
-    <p>سعر: 25 USD</p>
-    <form id="spaceremit-form-keyboard" style="width:100%;padding:10px;" method="POST">
-      <input type="hidden" name="amount" value="25">
-      <input type="hidden" name="currency" value="USD">
-      <input type="hidden" name="fullname" value="Client Test">
-      <input type="hidden" name="email" value="mouhammedtahaaouari1@gmail.com">
-      <input type="hidden" name="phone" value="+123456789">
-      <input type="hidden" name="notes" value="شراء كيبورد">
-
-      <div class="sp-one-type-select">
-        <input type="radio" name="sp-pay-type-radio" value="local-methods-pay" id="kb_local" checked>
-        <label for="kb_local"><div>Local payment methods</div></label>
-        <div id="spaceremit-local-methods-pay"></div>
-      </div>
-
-      <div class="sp-one-type-select">
-        <input type="radio" name="sp-pay-type-radio" value="card-pay" id="kb_card">
-        <label for="kb_card"><div>Card payment</div></label>
-        <div id="spaceremit-card-pay"></div>
-      </div>
-
-      <button type="submit">ادفع الآن</button>
-    </form>
-  </div>
-
-</section>
-
-<footer>
-  <p>© 2025 - متجر تجريبي باستخدام Spaceremit</p>
-</footer>
-
-<script src="https://spaceremit.com/api/v2/js_script/spaceremit.js"></script>
-
-<script>
-const SP_PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // ضع هنا المفتاح العام لاحقاً
-const SP_FORM_ID = "#spaceremit-form"; 
-const SP_SELECT_RADIO_NAME = "sp-pay-type-radio";
-const LOCAL_METHODS_BOX_STATUS = true;
-const LOCAL_METHODS_PARENT_ID = "#spaceremit-local-methods-pay";
-const CARD_BOX_STATUS = true;
-const CARD_BOX_PARENT_ID = "#spaceremit-card-pay";
-let SP_FORM_AUTO_SUBMIT_WHEN_GET_CODE = true;
-
-function SP_SUCCESSFUL_PAYMENT(spaceremit_code) {
-  alert("✅ تم الدفع بنجاح! كود العملية: " + spaceremit_code);
-}
-function SP_FAILD_PAYMENT() {
-  alert("❌ فشل الدفع، حاول مرة أخرى.");
-}
-function SP_RECIVED_MESSAGE(message) {
-  alert("ℹ️ رسالة: " + message);
-}
-function SP_NEED_AUTH(target_auth_link) {
-  window.location.href = target_auth_link;
-}
-</script>
+<!-- باقي الكود -->
 
 </body>
 </html>
